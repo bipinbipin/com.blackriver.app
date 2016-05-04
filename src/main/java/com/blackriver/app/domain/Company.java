@@ -1,6 +1,7 @@
 package com.blackriver.app.domain;
 
 import javax.persistence.*;
+import java.util.List;
 
 /**
  * Created by Bipin on 5/3/2016.
@@ -25,6 +26,9 @@ public class Company {
     private String state;
     private String zip;
     private String phone;
+
+    @OneToMany
+    private List<Store> storeList;
 
     public Company() {}
 
@@ -118,5 +122,13 @@ public class Company {
 
     public void setPhone(String phone) {
         this.phone = phone;
+    }
+
+    public List<Store> getStoreList() {
+        return storeList;
+    }
+
+    public void setStoreList(List<Store> storeList) {
+        this.storeList = storeList;
     }
 }
