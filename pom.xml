@@ -94,13 +94,26 @@
         <!-- ============================================== -->
 
 
-
-
+        <!-- ============================================== -->
+        <!-- APACHE POI (JAVA API FOR MS OFFICE) -->
+        <!-- ============================================== -->
         <dependency>
-            <groupId>org.springframework.security</groupId>
-            <artifactId>spring-security-ldap</artifactId>
-            <version>4.0.3.RELEASE</version>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>3.14</version>
         </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>3.14</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml-schemas</artifactId>
+            <version>3.14</version>
+        </dependency>
+
+        <!-- ============================================== -->
 
     </dependencies>
 
